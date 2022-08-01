@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Арройо</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../javascript/leaflet/leaflet.css">
+	<link rel="stylesheet" href="../towns_style.css">
+	<script src="../../javascript/leaflet/leaflet.js"></script>
+</head>
+
+
+<body>
+	<div id='map'></div>
+	<script src="../generate_location.js"></script>
+	<script>
+
+		const npc = [
+			{
+				name: "Охранник",
+				crds: [
+					[171, 1789],
+					[207, 1997],
+					[314, 1946],
+					[208, 269],
+					[518, 811],
+					[399, 1069],
+					[591, 843],
+					[591, 1068],
+					[829, 621],
+					[1614, 301],
+					[1648, 429],
+					[820, 1084],
+					[1214, 1291],
+					[1599, 1260],
+					[1516, 1949],
+					[1252, 2588],
+					[867, 2555],
+					[854, 1995],
+					[649, 1706],
+					[556, 1788],
+					[458, 1754],
+					[532, 1436],
+					[328, 1452],
+				]
+			},
+			{
+				name: "Мари",
+				crds: [364, 1885]
+			},
+			{
+				name: "Кэссиди",
+				crds: [553, 1915]
+			},
+			{
+				name: "Доктор Сорби",
+				crds: [698, 1884]
+			},
+			{
+				name: "Почтальон",
+				crds: [699, 1437]
+			},
+			{
+				name: "Минок",
+				crds: [851, 1213]
+			},
+			{
+				name: "Гильом",
+				crds: [591, 908]
+			},
+			{
+				name: "Стив Ходсон",
+				crds: [589, 492]
+			},
+			{
+				name: "Франческа",
+				crds: [781, 717]
+			},
+			{
+				name: "Джонатан",
+				crds: [891, 122]
+			},
+			{
+				name: "Катрин",
+				crds: [947, 300]
+			},
+			{
+				name: "Джордан",
+				crds: [976, 396]
+			},
+			{
+				name: "Сельма Хаек",
+				crds: [1428, 415]
+			},
+			{
+				name: "Кован",
+				crds: [999, 876]
+			},
+			{
+				name: "Фридрих",
+				crds: [1022, 1067]
+			},
+			{
+				name: "Мартин",
+				crds: [1118, 748]
+			},
+			{
+				name: "Билл",
+				crds: [1161, 905]
+			},
+			{
+				name: "Камерон",
+				crds: [1635, 860]
+			},
+			{
+				name: "Лейла",
+				crds: [1430, 1613]
+			},
+			{
+				name: "Джим",
+				crds: [1523, 2409]
+			},
+		]
+
+		const locations = {
+			exit: {
+				coords: [
+					[66.75, 1918.25],
+					[152, 1807],
+					[171.75, 1884.25],
+					[85.75, 1994]
+				],
+				isExit: true,
+				link: null
+			},
+			bank: {
+				coords: [
+					[1595.5, 262.75],
+					[1618.75, 258.5],
+					[1635.25, 245],
+					[1648, 245.25],
+					[1682.5, 318.25],
+					[1678.75, 370.5],
+					[1667.25, 389.75],
+					[1662, 395.25],
+					[1656.25, 396.5],
+					[1647, 390.5],
+					[1633, 387.25],
+					[1618.25, 386.75]
+				],
+				isExit: false,
+				link: './bank.html'
+			},
+		}
+		let bounds = [[0, 0], [1768, 2820]];
+		let path1 = '../../locations/arroyo/arroyo_1.jpg'
+		let path2 = '../../locations/arroyo/arroyo_2.jpg'
+
+		generateLocation(npc, bounds, path1, path2, locations)
+
+	</script>
+</body>
+
+</html>

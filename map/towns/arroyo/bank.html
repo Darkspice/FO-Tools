@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Банк Арройо</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../javascript/leaflet/leaflet.css">
+	<link rel="stylesheet" href="../towns_style.css">
+	<script src="../../javascript/leaflet/leaflet.js"></script>
+</head>
+
+<body>
+	<div id='map'></div>
+	<script src="../generate_location.js"></script>
+	<script>
+
+		const npc = [
+			{
+				name: "Охранник",
+				crds: [
+					[308.875, 573.125],
+					[334.875, 890.625],
+					[537.5, 427.75],
+					[551.125, 635.375],
+					[478.625, 733.625],
+					[443.25, 780.125],
+					[562.375, 717],
+					[430.125, 987.625],
+					[491.5, 1164.875],
+					[633.75, 1035.125]
+				]
+			},
+			{
+				name: "Кладовщик",
+				crds: [583.875, 1001.75]
+			},
+			{
+				name: "Хаболог",
+				crds: [479.625, 540.5]
+			},
+		]
+		const locations = {
+			main: {
+				coords: [
+					[398.25, 446.75],
+					[505.5, 447.75],
+					[512.25, 472.25],
+					[403.25, 472.5]
+				],
+				isExit: false,
+				link: './main.html'
+			},
+		}
+
+		let bounds = [[0, 0], [885, 1448]]
+		let path1 = '../../locations/arroyo/repl_bank_arroyo_1.jpg'
+		let path2 = '../../locations/arroyo/repl_bank_arroyo_2.jpg'
+
+		generateLocation(npc, bounds, path1, path2, locations)
+	</script>
+</body>
+
+</html>
