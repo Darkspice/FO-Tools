@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Accuracy Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <a href="../index.html">На главную</a>
+    <h2>Калькулятор точности</h2>
+    <form action="#" class="container__form">
+      <fieldset>
+        <legend>Кто атакует</legend>
+        <p>
+          <input type="range" name="" id="perception" min="1" max="10" value="1" oninput="showVal(this.value, this.id)">
+          <label for="perception">Восприятие:</label>
+        </p>
+        <fieldset>
+          <legend>Оружие</legend>
+          <div><input type="radio" name="gun" id="longrange">Дальнобойное</div>
+          <div><input type="radio" name="gun" id="electrical">Электронный прицел</div>
+          <div><input type="radio" name="gun" id="optical">Оптический прицел</div>
+          <div><input type="radio" name="gun" id="accurate">Точное</div>
+          <div><input type="radio" name="gun" id="nothing">Нет</div>
+        </fieldset>
+        <fieldset>
+          <legend>Перки и трейты</legend>
+          <div><input type="checkbox" name="" id="fastshooter">Быстрый стрелок</div>
+          <div><input type="checkbox" name="" id="stable">Стабильный</div>
+          <div><input type="checkbox" name="" id="onehand">Однорукий</div>
+          <div><input type="checkbox" name="" id="mathematic">Математик</div>
+          <div><input type="checkbox" name="" id="accuracy">Меткость</div>
+        </fieldset>
+        <fieldset>
+          <legend>Разное</legend>
+          <div><input type="checkbox" name="" id="light">Фонарик на оружие</div>
+          <div><input type="checkbox" name="" id="ncr">НКР</div>
+          <div><input type="checkbox" name="" id="implant">Имплант</div>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>Кого атакуют</legend>
+        <p>
+          <input type="range" name="" id="ac" min="1" max="100" value="1" oninput="showVal(this.value, this.id)">
+          <label for="ac">Класс брони:</label>
+        </p>
+        <p>
+          <input type="range" name="" id="range" min="1" max="57" value="1" oninput="showVal(this.value, this.id)">
+          <label for="range">Расстояние:</label>
+        </p>
+      </fieldset>
+    </form>
+    <div class="result">
+      <span class="final">Требуемый навык:</span>
+    </div>
+
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
