@@ -118,8 +118,6 @@ for (const { name, value } of Object.values(MOBS)) {
   mobTable.tBodies[0].append(tr);
 }
 
-console.log(mobTable.tBodies)
-
 function onMouseMove(event) {
 
   //Деструктируем таргет из ивента
