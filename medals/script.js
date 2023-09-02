@@ -103,10 +103,10 @@ for (const { name, value } of Object.values(MOBS)) {
   }
 
   const tr = document.createElement('tr');
-  const td = document.createElement('td');
-  td.textContent = name
+  const th = document.createElement('th');
+  th.textContent = name
 
-  tr.append(td);
+  tr.append(th);
 
   for (coef of COEFFS) {
     const td = document.createElement('td');
