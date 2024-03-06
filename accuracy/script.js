@@ -19,7 +19,7 @@ function calculate() {
   const isOptical = optical.checked;
 
   const KPers = isLongRange ? 8 : isElectrical ? 6 : 5;
-  const KDist = isOptical ? 5 : isElectrical ? 6 : 7;
+  const KDist = isOptical ? 5 : 7;
 
   const rangef = +range.value;
   const ACf = +ac.value;
