@@ -27,7 +27,7 @@ function calculate() {
   const perceptionf = +perception.value;
 
   const lightf = light.checked ? 10 - rangef / 6 : 0;
-  const implantf = implant.checked ? 3 : 0;
+  const implantf = implant.checked ? 25 : 0;
   const ncrf = ncr.checked ? 25 : 0;
 
   const fastshooterf = fastshooter.checked ? -40 : 0;
