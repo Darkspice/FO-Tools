@@ -30,7 +30,6 @@ function calculate() {
   const implantf = implant.checked ? 25 : 0;
   const ncrf = ncr.checked ? 25 : 0;
 
-  const fastshooterf = fastshooter.checked ? -40 : 0;
   const stablef = stable.checked ? 25 : 0;
   const onehandf = onehand.checked ? 60 : 0;
   const mathematicf = mathematic.checked ? 30 : 0;
@@ -49,7 +48,6 @@ function calculate() {
       mathematicf +
       onehandf +
       ncrf +
-      fastshooterf +
       accuratef +
       lightf +
       laserf +
